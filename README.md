@@ -33,14 +33,15 @@ Pick the file for your computer from the **[latest release](https://github.com/d
 
 | Your computer | Download |
 |---|---|
-|  **Mac with Apple silicon** (M1 and later) | [`Skillerr-arm64.dmg`](https://github.com/dot-skill/skillerr-releases/releases/latest) |
-|  **Mac with Intel** | [`Skillerr.dmg`](https://github.com/dot-skill/skillerr-releases/releases/latest) |
-| **Windows** (most PCs) | [`Skillerr-Setup-x64.exe`](https://github.com/dot-skill/skillerr-releases/releases/latest) |
-| **Windows on ARM** | [`Skillerr-Setup-arm64.exe`](https://github.com/dot-skill/skillerr-releases/releases/latest) |
-| **Linux** (x64) | [`Skillerr.AppImage`](https://github.com/dot-skill/skillerr-releases/releases/latest) |
-| **Linux** (ARM) | [`Skillerr-arm64.AppImage`](https://github.com/dot-skill/skillerr-releases/releases/latest) |
+|  **Mac with Apple silicon** (M1 and later) | [`Skillerr-mac-arm64.dmg`](https://github.com/dot-skill/skillerr-releases/releases/latest/download/Skillerr-mac-arm64.dmg) |
+|  **Mac with Intel** | [`Skillerr-mac-x64.dmg`](https://github.com/dot-skill/skillerr-releases/releases/latest/download/Skillerr-mac-x64.dmg) |
+| **Windows** (most PCs) | [`Skillerr-windows-x64.exe`](https://github.com/dot-skill/skillerr-releases/releases/latest/download/Skillerr-windows-x64.exe) |
+| **Windows on ARM** | [`Skillerr-windows-arm64.exe`](https://github.com/dot-skill/skillerr-releases/releases/latest/download/Skillerr-windows-arm64.exe) |
+| **Linux** (x64) | [`Skillerr-linux-x64.AppImage`](https://github.com/dot-skill/skillerr-releases/releases/latest/download/Skillerr-linux-x64.AppImage) |
+| **Linux** (ARM) | [`Skillerr-linux-arm64.AppImage`](https://github.com/dot-skill/skillerr-releases/releases/latest/download/Skillerr-linux-arm64.AppImage) |
 
-File names include the version, for example `Skillerr-0.1.3-arm64.dmg`.
+Each link is always the newest version. Every release also has the same files with the version in the name
+(for example `Skillerr-0.1.8-arm64.dmg`), which is what the in-app updater uses.
 
 ### Or install from a terminal
 
@@ -74,8 +75,10 @@ in place. Turn the checks off in **Settings → Check for updates**; they send o
 
 ## About this repository
 
-This repository only holds the installers. The code lives in
-**[dot-skill/skillerr-browser](https://github.com/dot-skill/skillerr-browser)** (open source, AGPL-3.0), where you
-can also report bugs and request features.
+This repository only holds the installers: there is no code here. Skillerr's source, including its MCP server
+([`mcp/`](https://github.com/dot-skill/skillerr-browser/tree/main/mcp)), its tests and its build pipeline, lives in
+**[dot-skill/skillerr-browser](https://github.com/dot-skill/skillerr-browser)**. Every installer here is built from
+that repository by its GitHub Actions workflow, after the tests pass. Both are open source under
+[AGPL-3.0](LICENSE). Report bugs and request features there.
 
 <div align="center"><sub>Made by Bharat Dudeja · <a href="https://skillerr.com">skillerr.com</a></sub></div>
